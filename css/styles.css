@@ -9,7 +9,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.714;
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
@@ -32,7 +32,7 @@ body {
   text-decoration: none;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: 1.192;
 
   color: #000;
 }
@@ -41,8 +41,7 @@ body {
 .nav-list .link,
 .contacts-list .link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.142;
   letter-spacing: 0.02em;
 
   color: var(--title-text-color);
@@ -54,18 +53,26 @@ body {
 
 .link:hover,
 .link:focus,
-.nav .current {
+.nav .current,
+.accent {
   color: var(--accant-color);
 }
 
 /* hero */
+.hero,
+.footer {
+  background-color: #2f303a;
+}
+
 .hero .title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.363;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  color: var(--primary-white-color);
 }
 
 .button {
@@ -74,7 +81,7 @@ body {
 
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.875;
   letter-spacing: 0.06em;
 
   color: var(--primary-white-color);
@@ -87,9 +94,8 @@ body {
 }
 
 .section .section-title {
-  font-weight: 700;
   font-size: 36px;
-  line-height: 1.2;
+  line-height: 1.166;
   text-align: center;
 
   color: var(--title-text-color);
@@ -97,17 +103,20 @@ body {
 
 /* features */
 .features-list .title {
-  font-weight: 700;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.142;
   text-transform: uppercase;
 }
 
 /* team */
+.team {
+  background-color: #f5f4fa;
+}
+
 .team-list .title,
 .team-list .text {
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.187;
   text-align: center;
 }
 
@@ -116,9 +125,21 @@ body {
   font-style: normal;
   color: var(--title-text-color);
 }
+
 .footer .link:hover,
 .footer .link:focus {
   color: var(--accant-color);
+}
+
+.footer .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .logo,
+.address .link,
+.address .link:hover,
+.address .link.footer {
+  color: var(--primary-white-color);
 }
 
 /*page-portfolio */
@@ -129,14 +150,14 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.625;
 
   color: var(--title-text-color);
   background-color: var(--portfolio-btn-color);
 }
 
-.portfolio-button:hover,
-.portfolio-button:focus {
+.active:hover,
+.active:focus {
   color: var(--primary-white-color);
   background-color: var(--accant-color);
 }
@@ -149,5 +170,5 @@ body {
 
 .page-portfolio .text {
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.875;
 }
